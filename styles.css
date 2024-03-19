@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(135deg, #764BA2, #667EEA);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo {
+    width: 50%;
+    max-width: 500px;
+    /* height: 400px; */
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 14px;
+}
+
+.main{
+    padding: 25px;
+}
+
+/* Working on the input fields*/
+
+.heading{
+    text-align: center;
+}
+
+.input-fields{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.inputs{
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    background-color: #f4eefa;
+    
+}
+
+.input-fields input::placeholder{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.add-btn button{
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #7700ff 0%, #a444e8 51%, #aa00ff  100%);
+    color: white;
+    cursor: pointer;
+    padding: 16px 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Working on the  list styling part*/
+
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
+
+ul li.checked {
+    color: black;
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+
